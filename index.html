@@ -1,1 +1,40 @@
-asda
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Detta är ett test av ett script</h1>
+    </head>
+    <body>
+        <p>Mitt namn är: <span id="outputName"></span></p> 
+        <p>Min ålder är: <span id="outputAge"></span></p>                 
+    </body>
+    
+</html>
+
+<script>
+    
+    // Script som deklarerar namn samt ålder och gör det möjligt att hämta detta till html-koden
+   
+    let name = "hund";   
+    document.getElementById("outputName").textContent = name;
+
+    // Funktion för att effektivisera kod
+
+    function presentAge(age) {
+        document.getElementById("outputAge").textContent = age;
+    }
+    
+    // Test av funktion i en if-sats
+    
+    if (name == "hund")
+    {
+        let age = 25     
+        presentAge(age);    
+    }
+
+    else
+    {
+        let age = 33
+        presentAge(age);        
+    }
+
+</script>  
